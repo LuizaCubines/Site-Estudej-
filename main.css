@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&family=Open+Sans:wght@400&family=Roboto:wght@300&display=swap');
+
 
 nav{
-    background-color: #a3cea3 ;
-    padding: 10px 0;
+    background-color: #b2d6b2 ;
+    padding: 5px 0;
 }
 
 nav ul{
@@ -18,12 +20,15 @@ nav ul li{
 }
 
 nav ul li a{
+  justify-content: center;
     color: white;
     text-decoration: none;
-    font: Arial ;
-    font-size: 25px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
     padding: 10px;
-    display: block;
+    display: inline-flex;
     transition: color 0,3s;
 }
 
@@ -51,7 +56,7 @@ nav ul li .dropdown-content li a{
 }
 
 nav ul li .dropdown-content li a:hover{
-    background-color: #e5a68a;
+    background-color: #e4b8b2;
 }
 
 nav ul li:hover .dropdown-content{
@@ -62,7 +67,7 @@ nav ul li:hover .dropdown-content{
 
 .slider{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -93,20 +98,20 @@ nav ul li:hover .dropdown-content{
 
 
 .plan {
-    display: inline-block;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
-    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    box-shadow: 0 30px 30px -25px #2d6d2b ;
     padding: 10px;
     background-color: #fff;
-    color: #697e91;
+    color: #345336;
     max-width: 300px;
   }
   
   .plan strong {
     font-weight: 600;
-    color: #425275;
+    color:  #2d6d2b ;
   }
   
   .plan .inner {
@@ -122,18 +127,18 @@ nav ul li:hover .dropdown-content{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #bed6fb;
+    background-color:#c1e1c1;
     border-radius: 99em 0 0 99em;
     display: flex;
     align-items: center;
     padding: 0.625em 0.75em;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #425475;
+    color: #a6100c;
   }
   
   .plan .pricing small {
-    color: #707a91;
+    color:#a6100c;
     font-size: 0.75em;
     margin-left: 0.25em;
   }
@@ -141,7 +146,7 @@ nav ul li:hover .dropdown-content{
   .plan .title {
     font-weight: 600;
     font-size: 1.25rem;
-    color: #425675;
+    color: #000000;
   }
   
   .plan .title + * {
@@ -168,7 +173,7 @@ nav ul li:hover .dropdown-content{
   }
   
   .plan .features .icon {
-    background-color: #1FCAC5;
+    background-color: #a6100c;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -195,7 +200,7 @@ nav ul li:hover .dropdown-content{
   }
   
   .plan .button {
-    background-color: #6558d3;
+    background-color:#2d6d2b ;
     border-radius: 6px;
     color: #fff;
     font-weight: 500;
@@ -209,5 +214,94 @@ nav ul li:hover .dropdown-content{
   }
   
   .plan .button:hover, .plan .button:focus {
-    background-color: #4133B7;
+    background-color:#2d6d2b ;
+  }
+  
+
+  .guia{
+    text-align: center;
+    color: #345336;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    justify-content: center;
+    background-color: #c1e1c1;
+  }
+
+  .card {
+    display: inline-block;
+    position: relative;
+    width: 290px;
+    height: 190px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .anterior{
+    text-align: center;
+    color: #a6100c;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    justify-content: center;
+    background-color: #e4b8b2;
   }
