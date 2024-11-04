@@ -1,0 +1,229 @@
+
+nav{
+    background-color: #b2d6b2 ;
+    padding: 5px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a{
+  justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+    padding: 10px;
+    display: inline-flex;
+    transition: color 0,3s;
+}
+
+nav ul li a:hover{
+    color: #a6100c;
+}
+
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2d6d2b ;
+    box-shadow: 0px 8px 16px 0 px rgba(0,0,0,0,2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li{
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover{
+    background-color: #e4b8b2;
+}
+
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+
+.but {
+  
+    padding: 1.3em 3em;
+    font-size: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.0px;
+    font-weight: 300;
+    color: #000;
+    background-color: #a6100c;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .but:hover {
+    background-color: #fff;
+    box-shadow: 0px 15px 20px rgba(9, 43, 30, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .but:active {
+    transform: translateY(-1px);
+  }
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    }
+    
+    th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    }
+    
+    
+    input.quantidade {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    }
+    
+    button.remover-produto {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #c0392b;
+    }
+
+
+.total-final {
+text-align: right;
+margin-top: 20px;
+}
+
+.total-final h3 {
+color: #333;
+}
+
+#total-final {
+color: #e74c3c;
+}
+
+button.remover-produto:hover {
+background-color: #ef3950;
+}
+
+footer {
+    background-color: #c1e1c1;
+    color: #2d6d2b ;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+    
+    .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+    
+    .footer-section {
+    flex-basis: 23%; 
+    margin-bottom: 20px;
+    }
+    
+    footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color:#a6100c;
+    }
+    
+    .footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+    
+    .footer-section ul {
+    list-style-type: none;
+    }
+
+    footer-section ul li {
+      margin-bottom: 10px;
+    }
+      
+      footer-section ul li a {
+      color: #2d6d2b ;
+      text-decoration: none;
+      transition: color 0.3s;
+      }
+      
+      .footer-section ul li a:hover {
+      color:#a6100c;
+      }
+      
+      .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+      }
+      
+      .social-links a:hover {
+      color: #116347;
+      }
+      
+      .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px 0;
+      border-top: 1px solid #116347 ;
+      font-size: 14px;
+      }
+      
+      .footer-bottom p {
+      margin: 0;
+      }
+
+      .links{
+        text-decoration: none;
+        color: white;
+      }
