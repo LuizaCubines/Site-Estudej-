@@ -1,3 +1,4 @@
+
 button {
   
     padding: 1.3em 3em;
@@ -89,117 +90,143 @@ button {
       display: block;
   }
   
-  header{
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-
-h1{
-    color: #2d6d2b ;
-}
-
-
-
-.produto{
+  .form {
     display: flex;
-    justify-content: space-around;
-    background-color: #e4b8b2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-}
-
-.imagens-produto{
-    flex:1;
-}
-
-.imagem-principal{
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 10px;
-}
-
-.miniaturas img{
-    width: 70px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.detalhes-produto{
-    flex: 1;
-}
-
-h2{
-    margin-bottom: 10px;
-    color:  #a6100c;
-}
-
-.descrição{
-    color: black;
-    margin-bottom: 15px;
-}
-
-.preco{
-    color: #a6100c;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.opcoes-compra{
-    display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
-}
-
-label{
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-select{
-    padding: 8px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.button3 {
-    background-color: #ffffff;
-    border: 1px solid rgb(209, 213, 219);
-    border-radius: 0.5rem;
-    color: #111827;
-    font-size: 0.875rem;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #a6100c;
     font-weight: 600;
-    text-decoration: none;
-    line-height: 1.25rem;
-    padding: 0.75rem 1rem;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #a6100c;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: #a6100c;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
     text-align: center;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .signin a {
+    color: #a6100c;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline #a6100c;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    justify-content: center;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: #a6100c;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #a6100c;
     cursor: pointer;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
   }
   
-  .button3:hover {
-    background-color: #f9fafb;
-  }
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
   
-  .button3:focus {
-    outline: 2px solid rgba(0, 0, 0, 0.1);
-    outline-offset: 2px;
-  }
-  
-  .button3:focus-visible {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-  
-  footer {
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }  
+
+
+footer {
     background-color: #c1e1c1;
     color: #2d6d2b ;
     padding: 40px 0;

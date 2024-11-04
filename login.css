@@ -88,117 +88,97 @@ button {
   nav ul li:hover .dropdown-content{
       display: block;
   }
-  
-  header{
-    text-align: center;
-    margin-bottom: 20px;
 
-}
-
-h1{
-    color: #2d6d2b ;
-}
-
-
-
-.produto{
-    display: flex;
-    justify-content: space-around;
-    background-color: #e4b8b2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-}
-
-.imagens-produto{
-    flex:1;
-}
-
-.imagem-principal{
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 10px;
-}
-
-.miniaturas img{
-    width: 70px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.detalhes-produto{
-    flex: 1;
-}
-
-h2{
-    margin-bottom: 10px;
-    color:  #a6100c;
-}
-
-.descrição{
-    color: black;
-    margin-bottom: 15px;
-}
-
-.preco{
-    color: #a6100c;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.opcoes-compra{
-    display: flex;
-    flex-direction: column;
-}
-
-label{
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-select{
-    padding: 8px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.button3 {
+  .form-control {
+    margin: 20px;
     background-color: #ffffff;
-    border: 1px solid rgb(209, 213, 219);
-    border-radius: 0.5rem;
-    color: #111827;
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-decoration: none;
-    line-height: 1.25rem;
-    padding: 0.75rem 1rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 8px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #a6100c;
     text-align: center;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  .input-field {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input {
+    margin-top: 15px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    height: 45px;
+    border: 1.5px solid #ecedec;
+    background: transparent;
+    padding-left: 10px;
+  }
+  .input:focus {
+    border: 1.5px solid #2d79f3;
+  }
+  .input-field .label {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .input-field .input:focus ~ .label,
+  .input-field .input:valid ~ .label {
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: #2d79f3;
+    background-color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .submit-btn {
+    margin-top: 30px;
+    height: 55px;
+    background: #f2f2f2;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #d51711 0%, #b4120d 50%, #a6100c);
+    box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     cursor: pointer;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
   }
   
-  .button3:hover {
-    background-color: #f9fafb;
+  .submit-btn:hover {
+    box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #a6100c;
   }
   
-  .button3:focus {
-    outline: 2px solid rgba(0, 0, 0, 0.1);
-    outline-offset: 2px;
+  .signin {
+    text-align: center;
   }
   
-  .button3:focus-visible {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  .signin a {
+    color: #a6100c;
   }
   
+  .signin a:hover {
+    text-decoration: underline #a6100c;
+  }
+
   footer {
     background-color: #c1e1c1;
     color: #2d6d2b ;
