@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Linguagens</title>
+    <link rel="stylesheet" href="materias.css">
+</head>
+<body>
+    <section id="home">
+        <nav>
+            <ul>
+                <li><a href="#home"><img src="graduado.png" alt="" width="25%"></a></li>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#áreas" class="dropbtn">Áreas de conhecimento</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Humanas.html">Ciências Humanas e suas Tecnologias</a></li>
+                        <li><a href="Linguagens.html">Linguagens, Códigos e suas Tecnologias</a></li>
+                        <li><a href="Natureza.html">Ciências da Natureza e suas Tecnologias</a></li>
+                        <li><a href="Matemática.html">Matemática e suas Tecnologias </a></li>
+                    </ul>
+                </li>
+                <li><a href="Redação.html">Redação</a></li>
+                <li class="dropdown">
+                    <a href="#mais" class="dropbtn">Mais</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#estudante">Área do estudante</a></li>
+                        <li><a href="#datas">Datas e horários</a></li>
+                        <li><a href="#provasanteriores">Provas anteriores</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><button class="button1"><a href="login.html">Login</a></button></li>
+                <li><button class="button1"><a href="cadastro.html">Cadastro</a></button></li>
+            </ul>
+            <nav class="navsecundaria">
+              <p></p>
+          </nav>
+          </nav>
+      
+    <header class="header">
+        <div class="container">
+            <h1>Estude já</h1>
+            <nav class="nav2">
+                <ul class="menu">
+                    <li><a href="#conteudos">Conteúdos</a></li>
+                    <li><a href="#videoaulas">Vídeo-aulas</a></li>
+                    <li><a href="#questoes">Questões</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Seção: Conteúdos -->
+        <section id="conteudos" class="section">
+            <div class="container">
+                <h2>Conteúdos para Linguagens</h2>
+                <p>Os principais temas abordados em Linguagens no ENEM estão detalhados abaixo:</p>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Interpretação de Textos</h3>
+                        <p>A habilidade de interpretar diferentes tipos de textos, como narrativos, descritivos e dissertativos, é essencial para o ENEM.</p>
+                        <p><strong>Dica:</strong> Preste atenção aos conectivos e ao tom do texto!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Funções da Linguagem</h3>
+                        <p>Compreenda como as funções da linguagem, como apelativa, referencial e poética, são usadas em diferentes contextos comunicativos.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Figuras de Linguagem</h3>
+                        <p>Aprenda sobre metáforas, metonímias, hipérboles e outras figuras que enriquecem o discurso.</p>
+                        <p><strong>Importante:</strong> Identificar o impacto das figuras no texto é crucial.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Gêneros Textuais</h3>
+                        <p>Explore diferentes gêneros textuais como carta, artigo de opinião e poesia. Cada um possui características próprias que devem ser reconhecidas.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Gramática Aplicada</h3>
+                        <p>Conheça a gramática que realmente importa para interpretar e construir textos. Foco em concordância, regência e pontuação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Vídeo-aulas -->
+        <section id="videoaulas" class="section section-alt">
+            <div class="container">
+                <h2>Vídeo-aulas Recomendadas</h2>
+                <div class="video-grid">
+                    <a href="https://www.youtube.com/watch?v=EXEMPLO1" target="_blank" class="video-card">
+                        <h3 class="letra">Interpretação de Textos</h3>
+                        <p>Dicas práticas e exemplos reais para aprimorar sua interpretação de textos.</p>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=EXEMPLO2" target="_blank" class="video-card">
+                        <h3 class="letra">Funções da Linguagem</h3>
+                        <p>Uma análise detalhada de como as funções são usadas no dia a dia e no ENEM.</p>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=EXEMPLO3" target="_blank" class="video-card">
+                        <h3 class="letra">Figuras de Linguagem</h3>
+                        <p>Aprenda a reconhecer metáforas, ironias e outros elementos nas questões.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Questões -->
+        <section id="questoes" class="section">
+            <div class="container">
+                <h2>Questões de Linguagens</h2>
+                <p>Pratique com questões reais do ENEM:</p>
+                <div class="question-grid">
+                    <div class="question-card">
+                        <p><strong>1. (ENEM 2020)</strong> Qual é a função da linguagem predominante em um texto publicitário?</p>
+                        <button class="button2" onclick="showAnswer('answer1')">Mostrar Resposta</button>
+                        <p id="answer1" class="answer" style="display: none;">Função apelativa ou conativa.</p>
+                    </div>
+                    <div class="question-card">
+                        <p><strong>2. (ENEM 2021)</strong> Identifique a figura de linguagem na frase: "O céu chorava naquele dia."</p>
+                        <button class="button2" onclick="showAnswer('answer2')">Mostrar Resposta</button>
+                        <p id="answer2" class="answer" style="display: none;">Personificação.</p>
+                    </div>
+                    <div class="question-card">
+                        <p><strong>3. (ENEM 2019)</strong> Qual é a principal característica do gênero textual *carta do leitor*?</p>
+                        <button class="button2" onclick="showAnswer('answer3')">Mostrar Resposta</button>
+                        <p id="answer3" class="answer" style="display: none;">Interação entre leitor e publicação, geralmente opinando sobre um tema.</p>
+                    </div>
+                    <div class="question-card">
+                        <p><strong>4. (ENEM 2018)</strong> Em qual função da linguagem predominam informações objetivas e claras?</p>
+                        <button class="button2" onclick="showAnswer('answer4')">Mostrar Resposta</button>
+                        <p id="answer4" class="answer" style="display: none;">Função referencial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+		<div class="footer-container">
+		 <div class="footer-section">
+		   <h4>Sobre Nós</h4>
+		      <p>Somos uma empresa dedicada a auxiliar e acompanhar o seu preparo e estudo para o vestibular.</p>
+		</div>
+		
+		<div class="footer-section">
+		 <h4>Links Rápidos</h4>
+		 <ul>
+		  <li><a class="links" href="#home">Home</a></li>
+		  <li><a class="links" href="sobrenos.html">Sobre</a></li>
+		  <li><a class="links" href="#Planos">Planos</a></li>
+		  <li><a class="links" href="#áreas">Áreas de conhecimento</a></li>
+		 </ul>
+		</div>
+		
+		<div class="footer-section">
+		<h4>Contato</h4>
+		<p>Email: contato@empresa.com</p>
+		<p>Telefone: (11) 1234-5678</p>
+		<p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+	    </div>
+
+	    <div class="footer-section">
+	     <h4>Siga-nos</h4>
+	    <div class="social-links">
+	 
+		<a href = "https://www.facebook.com" target="_blank">Facebook</a>
+	    <a href ="https://www.twitter.com" target="_blank">Twitter</a>
+	    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+	    </div>
+	    </div>
+	    </div>
+	
+	   	<div class="footer-bottom">
+	    <p>&copy; 2024 Empresa. Todos os direitos reservados.</p>
+		</div>
+	</footer>
+
+
+    <script>
+        function showAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    
+</body>
+</html>
